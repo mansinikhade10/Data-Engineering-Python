@@ -28,3 +28,37 @@ print(type(adult))#output : <class 'bool'>
 # none :None means there is no value.
 semister=None
 print(type(semister))#output : <class 'NoneType'>
+
+customer_id = 101
+customer_name = "Mansi"
+order_amount = 2500.75
+is_paid = True
+refund_amount = None
+
+print(type(customer_id))
+print(type(customer_name))
+print(type(order_amount))
+print(type(is_paid))
+print(type(refund_amount))
+
+quantity=int("5")*100
+print(quantity)
+
+price = float("1499.99")+500
+print(price)
+
+order_id =int( "5001")
+amount = float("2499.50")
+quantity =int( "3")
+is_refunded = bool("False")#it will give true because python always evaluate non empty string as a true
+#it only evaluate empty string as false so be careful while using this conversion with strings 
+#So never blindly use bool() to convert API strings like "True" and "False".
+
+#This is a very useful lesson for Data Engineering.
+
+print(is_refunded)
+print(type(order_id))
+print(type(amount))
+print(type(quantity))
+print(type(is_refunded))
+print(quantity*amount) #finish   
